@@ -46,7 +46,7 @@ const delete_task=(id) =>
         <div className="border">
           <CheckIcon className="check" onClick={() => {task_complete(todo.id) 
         todo.completed=true}}/>
-          <EditNoteIcon className="edit" sx={{ fontSize: "30px" }}  onClick={() => setEdit({ id: todo.id, title: todo.title, description:todo.description })}/>
+          {/* <EditNoteIcon className="edit" sx={{ fontSize: "30px" }}  onClick={() => setEdit({ id: todo.id, title: todo.title, description:todo.description })}/> */}
           <DeleteIcon className="delete"  onClick={() => delete_task(todo.id) } />
         </div>
       </div>

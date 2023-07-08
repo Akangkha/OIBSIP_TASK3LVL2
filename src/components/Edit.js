@@ -10,12 +10,7 @@ const [updatedTitlename, setUpdatedTitleName] = useState(edit.title);
   const [updatedDetailname, setUpdatedDetail] = useState(edit.description);
   const formSubmited = (e) => {
     e.preventDefault();
-    setTodos([
-        ...todos,
-        {  title: updatedTitlename, description: updatedDetailname, completed: false },
-      ]);
-      setUpdatedTitleName="";
-      setUpdatedDetail="";
+    
   };
 
   return (
